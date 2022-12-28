@@ -12,13 +12,18 @@
   </div>
 </template>
 
-<script setup>
-import LineGraph from "./LineGraph";
+<script setup lang="ts">
+import LineGraph from "./LineGraph.vue";
 
-const props = defineProps({
-  data: Object,
-  color: String
-});
+interface DataProps{
+  title: string,
+  unit: string,
+  value: string,
+  data: any,
+}
 
-const { data, color } = props;
+defineProps<{
+  data: DataProps,
+  color: string
+}>();
 </script>

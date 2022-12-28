@@ -14,6 +14,7 @@
   "devDependencies": {
     "@parcel/reporter-bundle-buddy": "^2.7.0",
     "@parcel/transformer-vue": "^2.7.0",
+    "@types/d3-selection": "^3.0.3",
     "parcel": "^2.7.0"
   },
   "dependencies": {

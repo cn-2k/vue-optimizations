@@ -18,11 +18,11 @@
   </div>
 </template>
 
-<script setup>
-import WidgetLoader from "../components/WidgetLoader";
-import WidgetLoaderSimple from "../components/WidgetLoaderSimple";
+<script setup lang="ts">
+import WidgetLoader from "../components/WidgetLoader.vue";
+import WidgetLoaderSimple from "../components/WidgetLoaderSimple.vue";
 
-    const components = [
+const components = [
       {
         url: "https://api.npoint.io/01264aa2a713715ccc1e",
         importFunction: () => import("../components/KPI.vue"),

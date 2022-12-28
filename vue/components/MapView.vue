@@ -2,13 +2,13 @@
   <div ref="mapWrapper" class="map-wrapper"></div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from "vue";
 import L from "leaflet";
 
-const props = defineProps({
-  data: Array,
-})
+const props = defineProps<{
+  data: Array<any>,
+}>()
 
     const { data } = props;
     const mapWrapper = ref(null);

@@ -9,11 +9,9 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
-defineProps({
-  errorMessage: String,
-})
-
-    const { errorMessage } = props;
+const props = defineProps<{
+  errorMessage?: string,
+}>()
 </script>

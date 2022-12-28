@@ -2,11 +2,12 @@
   <p class="loader">{{ text }}</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
-  const props = defineProps({
-  text: String,
-  default: "Loading...",
-})
-    const { text } = props;
+withDefaults(defineProps<{
+   text?: string
+ }>(), {
+     // here we have default values
+     text: 'Carregando...'
+ })
 </script>
